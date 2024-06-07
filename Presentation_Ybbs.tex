@@ -82,9 +82,9 @@
 % *** END BIBLIOGRAPHY <<<
 % ----------------------------------------------------------------------------
 
-\title{Satellite Image Based Mapping of Wetland Tundra Landscapes Using ILWIS GIS}
+\title{Economic assessment of landslide risk for the Waidhofen a.d. Ybbs region, Alpine Foreland, Lower Austria}
 \author{Polina Lemenkova}
-         \date{March 19, 2015}
+         \date{June 7, 2024}
 
 \begin{document}
 \begin{frame}
@@ -92,64 +92,102 @@
 \end{frame}
 
 \section{Introduction}
-\subsection{Research Goals}
-\begin{frame}{Research Goals}
-\begin{itemize}
-            \item Distribution of different types of landscapes in the wetland tundra of the Yamal Peninsula
-            \item Monitoring changes in the landscapes of tundra
-            \item Analysis of the landscape dynamics for 2 decades (1988-2011).
-            \item Data: Landsat TM satellite images for 1988 and 2011
-            \item Application of ILWIS GIS for spatial analysis and data processing on the region of Bovanenkovo, Yamal.
-            \item Technical approach: Remote sensing data processing by ILWIS GIS.
-            \item Methods: Supervised classification of Landsat TM images
-            \item Study area: tundra landscapes in the wetlands of the Yamal Peninsula in the Far North of Russia
-\end{itemize}
-\end{frame}
+\subsection{Summary}
 
-\section{Geographic Settings}
-
-\subsection{Cryogenic Landslides on the Yamal Peninsula}
-\begin{frame}{Cryogenic Landslides on the Yamal Peninsula}
-\begin{itemize}
-       \item[--] The negative effect of cryogenic landslides - changes in types of vegetation cover at the place of their formation.
-       \item[--] For 10 years after active cryogenic landslide processes, the area of their occurrence remains uncovered.
-       \item[--] Then, over the next few years, a process of slow restoration of the soil and vegetation cover takes place 
-       \item[--] Vegetation succession: plant communities with dominant herbs, mosses, lichens and sedge, willow and meadows with short shrubs.
-       \item[--] Vegetation in the early stages of restoration (mosses, lichens) indirectly indicates recent formation of the cryogenic landslides 
-       \item[--] Meadows and willow shrub, on the contrary, indicate a relatively developed and restored plant community. 
-       \item[--] Areas subjected to the formation of cryogenic landslides in past 2-3 decades are usually characterized by the spread of willow and shrubbery, an indirect indicator of these processes in the past.
-\end{itemize}
-\end{frame}
-
-\section{Methods}
-\subsection{Data Processing Algorithm} 
-\begin{frame}\frametitle{Data Processing Algorithm}
+\begin{frame}{National Civil Protection Management in Low Austria: ArcGIS-based approach for landslide assessment}
 \begin{minipage}[0.4\textheight]{\textwidth}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \vspace{2em}
 \begin{figure}[H]
 	\centering
-		\includegraphics[width=3.5cm]{00.jpg}
+		\includegraphics[width=4.5cm]{Fig_00.jpg}
 \end{figure}
 \begin{figure}[H]
 	\centering
-		\includegraphics[width=3.5cm]{00.jpg}
+		\includegraphics[width=2.5cm]{ArcGIS_logo.png}
 \end{figure}
-Examples of various types of the vegetation typical for the Yamal tundra, Arctic.
 \end{column}
-\begin{column}{0.5\textwidth}
-Algorithms of the data processing in ILWIS GIS: 
+\begin{column}{0.60\textwidth}
 \begin{enumerate}[i]
-            \item Data collection, import and conversion
-            \item Data: 2 Landsat TM images, 1988 \& 2011
-            \item Data pre-processing 
-            \item Georeferencing: WGS 1984 ellipsoid to UTM, E42, NW
-            \item 3 spectral channels for image processing: color composite\& multi-band layers
-            \item Clustering segmentation and classification
-            \item GIS mapping, spatial analysis
-            \item Google Earth imagery verification
-            \item Results interpretation
+\vspace{1em}
+\footnotesize
+            \item \textcolor{red}{Research goals}: Improving the national landslide disaster control by evaluating the expected number of people affected by landslides.
+            \item \textcolor{red}{Aim}: to assess potential risk and estimate economic damage caused by landslides. 
+            \item \textcolor{red}{Study area}: Ybbs valley, Lower Austria
+            \item \textcolor{red}{Software}: Arc GIS-based spatial analysis and estimation of the potential monetary losses caused by landslides.
+            \item \textcolor{red}{Technical approach}: Geospatial and economic data processing by Arc GIS using spatial and economic analysis
+            \item \textcolor{red}{Methods}: Defining elements at risk located in the risk zone of 100 m near landslides, and assessment of potential consequences.
+            \item \textcolor{red}{Results}: calculated possible losses caused by the destruction of immobility and transport: costs for buildings demolition, restoration, roads rebuilding, debris transport, excavation and removal.
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{minipage}
+\end{frame}
+
+\section{Geographic Settings}
+
+\subsection{Study area: Ybbs valley}
+\begin{frame}{Study area: Ybbs valley, Alpine Foreland, Austria}
+
+\begin{minipage}[0.4\textheight]{\textwidth}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\vspace{2em}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=4.5cm]{Fig_01.jpg}
+\end{figure}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=4.5cm]{Fig_02.jpg}
+\end{figure}
+\end{column}
+\begin{column}{0.60\textwidth}
+\begin{enumerate}[i]
+\vspace{1em}
+\footnotesize
+        \item[--] The region of Ybbs valley is located in mountainous Alpine Foreland, Austria.
+       \item[--] It covers a total area of 131.3 km2.
+       \item[--] The environmental conditions of the the Ybbs valley are especially prone to landslides. 
+       \item[--] Geology: deposits of gravel, sand, marl, conglomerate, calcareous sandstone, clay. 
+       \item[--] Most of the region is used as pasture, agricultural land, and large forests.
+       \item[--] Climatic humid to continental. Intensive rainfalls in spring and autumn months. 
+       \item[--] The region is attractive for tourists due to its environmental and historical value.
+\end{enumerate}
+\vspace{0em}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=5.5cm]{Fig_03.jpg}
+\end{figure}
+\end{column}
+\end{columns}
+\end{minipage}
+\end{frame}
+
+\section{Methods}
+\subsection{Data} 
+\begin{frame}\frametitle{Data}
+\begin{minipage}[0.4\textheight]{\textwidth}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Data structure
+\vspace{0em}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=5.5cm]{Tab_01.jpg}
+\end{figure}
+\end{column}
+\begin{column}{0.50\textwidth}
+Data characteristics
+\begin{enumerate}[i]
+\vspace{1em}
+\footnotesize
+            \item \textcolor{red}{Sources}: Data used in this research were obtained from the repositories of Provincial Government of Lower Austria.
+            \item \textcolor{red}{Content}: Data include vector thematic layers covering the area, aerial imagery, topographic vector layers and maps. 
+            \item \textcolor{red}{Organization}: Data have been organized in a ArcCatalog database and sorted according to their types (Tab.1).
+            \item \textcolor{red}{Compatibility}: Data have been stored in the ArcGIS project in Austrian National grid Austria Bundesmeldenetz (BMN) M34.
+            \item \textcolor{red}{Software}: Arc GIS-based spatial analysis and calculations for estimation of the potential monetary losses caused by landslides.
 \end{enumerate}
 \end{column}
 \end{columns}
@@ -183,16 +221,22 @@ Algorithms of the data processing in ILWIS GIS:
 \subsection{Conclusions}
 \begin{frame}\frametitle{Conclusions}
 \begin{itemize}
-	   \item Monitoring landscape changes is an important tool for assessing the ecological stability of a region
-            \item Spatial analysis of the multi-temporal satellite images by ILWIS GIS algorithms is an effective tool
-            \item Research demonstrated how Yamal wetland tundra landscapes changed over a 23-year period of time
-            \item Data included LandsatTM satellite imagery covering the Yamal Peninsula, Far North of Russia
-            \item Image processing was done by classification methods.
-            \item Area of grasses decreased compared to shrub and willow
-            \item Max area covered by class 'heather and dry grass' is 933798 pixels
-             \item Results shown changes in the landscapes from 1988 to 2011
-            \item Results confirm presence of the destructive processes caused changes in tundra boggy landscapes.
-            \item Research demonstrated successful ILWIS GIS based of the RS data analysis, effective for tundra monitoring
+\footnotesize
+	   \item The research focuses on the monetary estimation of the possible losses caused by landslide risks. Estimation of the economic damages is performed using existing simplified methodologies. 	   
+            \item Calculations were based on real estate and market price of the elements at risk.            
+            \item While assessing potential damage of landslides confusion arises due to these factors.
+            \begin{itemize}
+            \footnotesize
+            	\item Temporal probability of the landslides occurrence is highly difficult to assess: it can only be estimated based on the reliable and obtainable data. This includes historical data continuously reporting the occurrence of the landslides.
+		\item Difficulties arise by estimation of the indirect losses and partially damaged objects. The amount of the damages can be assessed based on elements vulnerability, which is very uncertain to estimate exactly. Thus, the vulnerability may differ depending on object location, individual characteristics and external factors.
+		\item The term “landslide” include debris flows, shallow or rotational landslides. 
+		\item Future studies may include different method approaches in the risk assessment to assess difference in magnitude and occurrence of landslides, risk perception and vulnerability assessment. 
+	    \end{itemize}
+            \item The data about landslide probability are gained from economic monitoring programmes.
+            \item The elements at risk are defined based on spatial analysis and infrastructure inventory.
+            \item The vulnerability estimation included basic census and approximate social data.
+            \item Results confirm presence of the destructive processes of landslides.
+            \item Research demonstrated successful Arc GIS based of the spatial data analysis and risk assessment
 \end{itemize}
 \end{frame}
 
