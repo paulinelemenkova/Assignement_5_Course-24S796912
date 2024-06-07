@@ -1,0 +1,212 @@
+\documentclass[pdflatex,compress,9pt,
+	xcolor={dvipsnames,dvipsnames,svgnames,x11names,table},
+	hyperref={colorlinks = true,breaklinks = true, urlcolor = NavyBlue, breaklinks = true}]{beamer}
+\usetheme{Goettingen}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A,T1]{fontenc}
+\usepackage{gensymb} % degree symbol
+\usepackage[super]{nth}
+
+
+% ----------------------------------------------------------------------------
+% *** START BIBLIOGRAPHY <<<
+% ----------------------------------------------------------------------------
+\usepackage[
+	backend=biber, 
+	style = numeric,
+%	style=nature,
+%	style=science,
+%	style=apa,
+%	style=mla,
+%	style=phys, 
+	maxbibnames=99,
+%	citestyle=authoryear,
+	citestyle=numeric,
+	giveninits=true,
+	isbn=true,
+	url=true,
+	natbib=true,
+	sorting=ndymdt,
+	bibencoding=utf8,
+	useprefix=false,
+	language=auto, 
+	autolang=other,
+	backref=true,
+	backrefstyle=none,
+	indexing=cite,
+]{biblatex}
+\DeclareSortingTemplate{ndymdt}{
+  \sort{
+    \field{presort}
+  }
+  \sort[final]{
+    \field{sortkey}
+  }
+  \sort{
+    \field{sortname}
+    \field{author}
+    \field{editor}
+    \field{translator}
+    \field{sorttitle}
+    \field{title}
+  }
+  \sort[direction=descending]{
+    \field{sortyear}
+    \field{year}
+    \literal{9999}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{month}
+    \literal{99}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{day}
+    \literal{99}
+  }
+  \sort{
+    \field{sorttitle}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=4,padchar=0]{volume}
+    \literal{9999}
+  }
+}
+
+\addbibresource{YO.bib}
+\renewcommand*{\bibfont}{\tiny} %\scriptsize \footnotesize
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+% ----------------------------------------------------------------------------
+% *** END BIBLIOGRAPHY <<<
+% ----------------------------------------------------------------------------
+
+\title{Satellite Image Based Mapping of Wetland Tundra Landscapes Using ILWIS GIS}
+\author{Polina Lemenkova}
+         \date{March 19, 2015}
+
+\begin{document}
+\begin{frame}
+           \titlepage
+\end{frame}
+
+\section{Introduction}
+\subsection{Research Goals}
+\begin{frame}{Research Goals}
+\begin{itemize}
+            \item Distribution of different types of landscapes in the wetland tundra of the Yamal Peninsula
+            \item Monitoring changes in the landscapes of tundra
+            \item Analysis of the landscape dynamics for 2 decades (1988-2011).
+            \item Data: Landsat TM satellite images for 1988 and 2011
+            \item Application of ILWIS GIS for spatial analysis and data processing on the region of Bovanenkovo, Yamal.
+            \item Technical approach: Remote sensing data processing by ILWIS GIS.
+            \item Methods: Supervised classification of Landsat TM images
+            \item Study area: tundra landscapes in the wetlands of the Yamal Peninsula in the Far North of Russia
+\end{itemize}
+\end{frame}
+
+\section{Geographic Settings}
+
+\subsection{Cryogenic Landslides on the Yamal Peninsula}
+\begin{frame}{Cryogenic Landslides on the Yamal Peninsula}
+\begin{itemize}
+       \item[--] The negative effect of cryogenic landslides - changes in types of vegetation cover at the place of their formation.
+       \item[--] For 10 years after active cryogenic landslide processes, the area of their occurrence remains uncovered.
+       \item[--] Then, over the next few years, a process of slow restoration of the soil and vegetation cover takes place 
+       \item[--] Vegetation succession: plant communities with dominant herbs, mosses, lichens and sedge, willow and meadows with short shrubs.
+       \item[--] Vegetation in the early stages of restoration (mosses, lichens) indirectly indicates recent formation of the cryogenic landslides 
+       \item[--] Meadows and willow shrub, on the contrary, indicate a relatively developed and restored plant community. 
+       \item[--] Areas subjected to the formation of cryogenic landslides in past 2-3 decades are usually characterized by the spread of willow and shrubbery, an indirect indicator of these processes in the past.
+\end{itemize}
+\end{frame}
+
+\section{Methods}
+\subsection{Data Processing Algorithm} 
+\begin{frame}\frametitle{Data Processing Algorithm}
+\begin{minipage}[0.4\textheight]{\textwidth}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\vspace{2em}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=3.5cm]{00.jpg}
+\end{figure}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=3.5cm]{00.jpg}
+\end{figure}
+Examples of various types of the vegetation typical for the Yamal tundra, Arctic.
+\end{column}
+\begin{column}{0.5\textwidth}
+Algorithms of the data processing in ILWIS GIS: 
+\begin{enumerate}[i]
+            \item Data collection, import and conversion
+            \item Data: 2 Landsat TM images, 1988 \& 2011
+            \item Data pre-processing 
+            \item Georeferencing: WGS 1984 ellipsoid to UTM, E42, NW
+            \item 3 spectral channels for image processing: color composite\& multi-band layers
+            \item Clustering segmentation and classification
+            \item GIS mapping, spatial analysis
+            \item Google Earth imagery verification
+            \item Results interpretation
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{minipage}
+\end{frame}
+
+
+\section{Results}
+\subsection{Mapping Results}
+\begin{frame}\frametitle{Mapping Results}
+\begin{minipage}[0.4\textheight]{\textwidth}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+1988
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=5.0cm]{00.jpg}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+2011
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=5.0cm]{00.jpg}
+\end{figure}
+\end{column}
+\end{columns}
+\end{minipage}
+\end{frame}
+
+\subsection{Conclusions}
+\begin{frame}\frametitle{Conclusions}
+\begin{itemize}
+	   \item Monitoring landscape changes is an important tool for assessing the ecological stability of a region
+            \item Spatial analysis of the multi-temporal satellite images by ILWIS GIS algorithms is an effective tool
+            \item Research demonstrated how Yamal wetland tundra landscapes changed over a 23-year period of time
+            \item Data included LandsatTM satellite imagery covering the Yamal Peninsula, Far North of Russia
+            \item Image processing was done by classification methods.
+            \item Area of grasses decreased compared to shrub and willow
+            \item Max area covered by class 'heather and dry grass' is 933798 pixels
+             \item Results shown changes in the landscapes from 1988 to 2011
+            \item Results confirm presence of the destructive processes caused changes in tundra boggy landscapes.
+            \item Research demonstrated successful ILWIS GIS based of the RS data analysis, effective for tundra monitoring
+\end{itemize}
+\end{frame}
+
+\end{document}
+%Changing the font size locally (from biggest to smallest):	
+%\Huge
+%\huge
+%\LARGE
+%\Large
+%\large
+%\normalsize (default)
+%\small
+%\footnotesize
+%\scriptsize
+%\tiny
+
+\end{document}
