@@ -83,7 +83,9 @@
 % ----------------------------------------------------------------------------
 
 \title{Economic assessment of landslide risk for the Waidhofen a.d. Ybbs region, Alpine Foreland, Lower Austria}
+\vspace{2em}
 \author{Polina Lemenkova}
+\subtitle{\emph{Assignment No. 5 -- National Civil Protection Manager} \\ Course 24S796912: Disaster Risk Management with Geoanalytics}
          \date{June 7, 2024}
 
 \begin{document}
@@ -186,6 +188,7 @@ Data characteristics
             \item \textcolor{red}{Content}: Data include vector thematic layers covering the area, aerial imagery, topographic vector layers and maps. 
             \item \textcolor{red}{Organization}: Data have been organized in a ArcCatalog database and sorted according to their types (Tab.1).
             \item \textcolor{red}{Compatibility}: Data have been stored in the ArcGIS project in Austrian National grid Austria Bundesmeldenetz (BMN) M34.
+            \item \textcolor{red}{Probability}: Data on landslide probability are gained from economic monitoring programmes.
             \item \textcolor{red}{Software}: Arc GIS-based spatial analysis and calculations for estimation of the potential monetary losses caused by landslides.
 \end{enumerate}
 \end{column}
@@ -209,7 +212,7 @@ Landslides classified by age in Ybbs valley, Lower Austria
 \footnotesize
             \item \textcolor{red}{Location}: The geographic location of landslides within the Ybbs valley was used for defining risk zones.
             \item \textcolor{red}{Risk zone}: 100-meter buffer area surrounding all landslides downwards, as a landslide with volume of 1 km3 may reach 100 meters while moving. 
-            \item \textcolor{red}{Elements at risk}: The objects located in the 100 meter distance downwards the landslides are regarded as elements at risk.
+            \item \textcolor{red}{Definition of the elements at risk}: objects located in the 100 meter distance downwards the landslides
 \end{enumerate}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -231,18 +234,12 @@ Enlarged: city centre
 \end{minipage}
 \end{frame}
 
-
-
-
-
-
-
 \section{Results}
 \begin{frame}\frametitle{Results}
 \begin{minipage}[0.4\textheight]{\textwidth}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
-%\vspace{0.5em}
+\vspace{0.5em}
 Estimation of possible monetary losses for transport.
 \begin{figure}[H]
 	\centering
@@ -251,7 +248,6 @@ Estimation of possible monetary losses for transport.
 \begin{enumerate}[i]
 \vspace{-0.5em}
 \footnotesize
-            \item \textcolor{red}{Definition}: The elements at risk were selected in defined 100-meter buffer area near the landslides.
             \item \textcolor{red}{Spatial analysis}: The length and number of the elements at risk within the distance of 100 m near landslides totals to 20.9 km of railway lines, 13.5 km of roads and 641 buildings.
             \item \textcolor{red}{Calculation the economic losses (real estate)}: computed from 5 different types of costs: 1) demolition, 2) transport and disposal debris, 3) restoration of inner walls, 4) furniture restoration and 5) house construction.
 \end{enumerate}
@@ -271,21 +267,25 @@ as for average market value.
 
 
 \subsection{Conclusions}
-\begin{frame}\frametitle{Conclusions}
+\begin{frame}\frametitle{Conclusions and key deliverables}
 \begin{itemize}
 \footnotesize
-	   \item The research focuses on the monetary estimation of the possible losses caused by landslide risks. Estimation of the economic damages is performed using existing simplified methodologies. 	   
-            \item Calculations were based on real estate and market price of the elements at risk.            
-            \item While assessing potential damage of landslides confusion arises due to these factors.
-	    \begin{itemize}
-            	\item \textcolor{red}{Estimation of the economic losses}: for Ybbs valley, real estate prices for common goods (immobility, roads) were used for estimation of possible losses in the zone of risk.
-           	 \item \textcolor{red}{Calculations}:  Economic losses were computed approximately (€) based on the average real estate prices for various aspects of renovation, reconstruction and rebuilding of the destroyed objects.
-	   \end{itemize}
-            \item The data about landslide probability are gained from economic monitoring programmes.
-            \item The elements at risk are defined based on spatial analysis and infrastructure inventory.
-            \item The vulnerability estimation included basic census and approximate social data.
-            \item Results confirm presence of the destructive processes of landslides.
-            \item Research demonstrated successful Arc GIS based of the spatial data analysis and risk assessment
+	   \item \textcolor{red}{Focus} The research focuses on the monetary estimation of the possible losses caused by landslide risks. 
+	   \item \textcolor{red}{Approach} Estimation of the economic damages is performed using existing simplified methodologies.
+            \item \textcolor{red}{Estimation of the economic losses}: for Ybbs valley, real estate and market prices for common goods (immobility, roads) were used for estimation of possible losses of the elements at risk in the risk zone.
+            \begin{itemize}
+            \footnotesize
+            	\item The average volume of demolish damaged buildings indicated the dimensions of the losses of ca. 13.65 M €.
+		\item The estimated price for the debris removal is approx. 3.6 M €, in case buildings are totally affected and covered.
+		\item The restoration of the inner walls is based on average prices for building restoration and approximate surface of the walls: 2.73 M €. 
+		\item Using approximate prices of the furniture costs in a typical house the costs for furniture renovation is € 190,500.
+		\item Cost for house construction is computed using real estate prices and average house area in m2 which sums up to € 349,250.
+		\item The losses for transport include costs to rebuild a road, a railway, and a restoration of the roads.
+		\item A total of almost 140 M € would have to be invested for the renovation of the Ybbs valley in case of a landslides disaster 
+            \end{itemize}
+            \item \textcolor{red}{Economic losses}: were calculated \emph{approximately} (€) based on the average real estate prices for various aspects of renovation, reconstruction and rebuilding of the destroyed objects.
+            \item \textcolor{red}{Vulnerability}: estimation included basic census and approximate social data.
+            \item \textcolor{red}{Software}: Arc GIS presents excellent geospatial tool for risk assessment
 \end{itemize}
 \end{frame}
 
